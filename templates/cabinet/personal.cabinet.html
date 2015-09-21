@@ -1,0 +1,31 @@
+{% extends "personal.base.html" %}
+
+        {% block content %}
+          <h1>Здравствуйте, {{ username }}!</h1>
+          <h3>Баланс Вашего счёта:</h3>
+          <p class="balance">{{ account_summary }}$</p>
+
+          <h3>История платежей</h3>
+          
+            {% for bill in billing_story %}
+              <div class="balance" style="margin:2%">
+                <div class="row" style="text-align:left;">
+                  <div class="col-md-4">
+                    <p>Поступление: </p>
+                  </div>
+                  <div class="col-md-8">
+                    <p>{{ bill.bid }}</p>
+                  </div>
+                </div>
+                <div class="row" style="text-align:left;">
+                  <div class="col-md-4">
+                    <h3>Подпись:</h3> 
+                  </div>
+                  <div class="col-md-8">
+                    <h3><small>{{ bill.sign }}<small></h3>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          
+        {% endblock content %}

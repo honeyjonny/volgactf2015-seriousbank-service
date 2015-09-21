@@ -1,0 +1,36 @@
+{% extends "front.base.html" %}
+
+        {% block content %}
+          <h2 >Добро пожаловать в интернет-банк финансовой корпорации ProstoBank</h2>
+            <div class="row">
+              <div class="col-md-7">
+                <h1>Вход в личный кабинет</h1>
+                {{ form.errors }}
+                <form action="." method="post">
+                  <div class="form-group">
+                    <label for="{{ form.username.id_for_label }}">Логин</label>
+                    {{ form.username }}
+                  </div>
+                  <div class="form-group">
+                    <label for="{{ from.password.id_for_label }}">Пароль</label>
+                    {{ form.password }}
+                  </div>
+                  <button type="submit" class="btn">Войти</button>  
+                </form>
+                <div class="info">
+                 <form action="/register/">Вы здесь впервые? 
+                    <p>
+                      <button type="submit" class="btnNew">Регистрация</button>
+                    </p>
+                 </form>
+                </div>
+              </div>
+          </div>
+      {% endblock content %}
+
+      {% block footer %}
+        <ul>
+          <li><a href="/register/">Регистрация</a></li>
+          <li><a href="/">Вернуться на главную</a></li>
+        </ul>
+      {% endblock footer %}

@@ -1,0 +1,18 @@
+{% extends "front.base.html" %}
+
+        {% block content %}
+          <h1>Добро пожаловать в Мобильный банк финансовой корпорации ProstoBank</h1>
+          <form action="/login/"><p> Для входа в личный кабинет, пожалуйста,  авторизуйтесь</p>
+          <button type="submit" class="btn">Войти</button>  </form>
+          <form action="/register/"><p>Если Вы здесь впервые, пожалуйста, зарегистрируйтесь</p>
+          <button type="submit" class="btn">Создать аккаунт</button>  </form>
+        {% endblock content %}
+
+        {% block footer %}
+        <ul>
+          <li><a href="#">ProstoBank</a></li>
+          <li><a href="#">Вакансии</a></li>
+          <li><a href="http://volgactf.ru">Контакты</a></li>
+          <li><a href="#">Помощь</a></li>
+        </ul>
+        {% endblock footer %}

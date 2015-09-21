@@ -1,0 +1,108 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+background: url(http://localhost:8000/static/img/bg.jpg) no-repeat;
+background-size: cover;
+color: #fff;
+background-color: #140e07; 
+}
+
+
+.container {
+  max-width: 940px;
+}
+
+/* Header */
+.header {
+text-align: center;
+margin-bottom: 50px;
+}
+
+.header .container {
+border-bottom: solid 1px #e5e5e5;
+padding: 30px;
+}
+
+/* Main */
+.main {
+margin: 80px 0;
+}
+
+.main h1{
+font-size: 30px;
+margin: 0 0 20px 0;
+}
+
+.main h2{
+font-size: 20px;
+margin: -60px 0 40px 0;
+text-align: center;
+}
+
+/* Form */
+form input.form-control {
+border: 0px;
+border-radius: 0px;
+}
+
+.main .btn {
+margin: 30px 0;
+border-radius: 0px;
+background: rgba(0,240,190,0.25);
+border: 0px;
+color: #fff;
+}
+
+.main .btn:hover {
+margin: 30px 0;
+border-radius: 0px;
+background: rgba(0,240,190,0.25);
+border: 0px;
+color: #fff;
+  box-shadow: 0px 1px 16px rgba(0,0,0,0.6);
+}
+
+.main .btnNew {
+margin: 30px 0;
+border-radius: 0px;
+background-color: transparent;
+border: 1px solid rgba(0,240,190,0.25);
+color: #fff;
+}
+
+.main .btnNew:hover {
+margin: 30px 0;
+border-radius: 0px;
+background: rgba(0,240,190,0.25);
+border: 1px solid rgba(0,240,190,0.25);
+color: #fff;
+}
+
+.main .info{
+	padding: 50px 0 0px 0;
+}
+
+/* Footer */
+.footer .container {
+padding: 20px 0;
+border-top: solid 1px #e5e5e5; 
+}
+
+.footer ul {
+list-style: none;
+padding: 0 20px;
+margin-bottom: 80px;
+}
+
+.footer li {
+display: inline;
+margin-right: 30px;
+}
+
+.footer a{
+color: #fff;
+}
